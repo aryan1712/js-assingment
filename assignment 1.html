@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <h1>This is my assignment1 of day 2</h1>
+    </head>
+<body>
+<script type="text/javascript">
+ // THIS WILL DISPLAY TIME
+	var currentTime = new Date();
+      hours = currentTime.getHours();
+      zone = hours >= 12 ? 'pm' : 'am'
+      minutes = currentTime.getMinutes();
+      seconds = currentTime.getSeconds();
+
+    if (minutes < 10)
+     {
+	 minutes = "0" + minutes;
+     }
+    document.write("TIME = " + hours + ":" + minutes + ":" + seconds + " " + zone)
+    document.write("<br/>") 
+
+ // THIS WILL DISPLAY DAY
+   var currentTime=new Date();
+    now = currentTime.getDay();
+    day = ['SUN' , 'MON' , 'THU' , 'WED' , 'THUR' , 'FRI', 'SAT'];
+   document.write("TODAY = " + day[now] );
+</script>
+</body>
+</html>
